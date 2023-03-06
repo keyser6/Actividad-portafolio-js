@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+
+    <!-- Link a la hoja de estilo de Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+  <body>
+    
+
+<!--Navbar-->
+<div class="container-fluid">
+    <nav class="fixed-top navbar navbar-expand-lg navbar-light ps-5 pe-5" style="background-color:hsl(213, 20%, 20%)" >
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" style="color: coral;" href="#">Ailen Sol Varela</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#About">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#Experiencia">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#Saludo">Saludo</a>
+                    </li>
+                </ul>
+            </div>
+         
+        </div>
+    </nav>
+
+</div>
+
+<!--cARRUSEL-->
+<div name="Home" id="Home">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="Imagenes/IAWEWPLZTFDUFKQSUVK3NN5IP4.avif" alt="First slide">
+      </div>
+      <div  class="carousel-item">
+        <img class="d-block w-100" src="Imagenes/a9fe1f94d0b6e755050afe441bff292d.jpg" alt="Second slide">
+      </div>
+
+        <div class="carousel-caption text-center">
+            <blockquote class="blockquote">
+                <h3 style="color:coral;">Bienvenido</h3>
+            </blockquote>            
+            <h1 class="display-1 fw-bold" style="color: coral;">Soy Ailen Sol Varela</h1>
+
+           
+        </div>
+    </div>
+</div>
+</div>
+
+<br>
+<br>
+
+<!--SOBRE MI-->
+<div name="About" id="About">
+    <br>    
+    <div class="card">
+        <div class="row">
+          <div class="col-md-4">
+                <img src="Imagenes/IMG_20211019_100211955.jpg" class="card-img">
+          </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Hola, soy Ailen Sol Varela</h5>
+                    <h6 class="card-text">Soy electromedica y estudiante de front-end</h6>
+                    <p class="card-text text-justify"><small class="text-muted">Estudie electromedica en la Facultad de Ingenieria de Olavarría, ciudad donde recido.Me dedico a la electronica, reparando equipos médicos y de estéticas. Tambien realizo trabajos de electricidad industrial y del hogar.
+                    Comence a insertarme en el mundo de la programacion, por medio de la electronica y la utilizacion de microprocesadores y sistemas de control.
+                    </small></p>
+           
+                    <div class="row about-list" flex>
+                        <div class="col-md-6">
+                            <div class="media"><label>Nacimiento</label><p>: 28 de abril de 1996</p></div>
+                            <div class="media"><label>Edad</label><p>: 26 años</p></div>
+                            <div class="media"><label>Residencia</label><p>: Olavarría, Buenos Aires.</p></div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="media"><label>Email</label><p>: varelaailensol@gmail.com</p></div>
+                            <div class="media"><label>Telefono</label><p>: 2284-219397</p></div>
+                            <div class="media"><label>Freelance</label><p>: Disponible.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+</div>
+
+<br>
+<br>
+
+<!--Experiencia-->
+
+<div name="Experiencia" id="Experiencia"></div>
+       
+
+</div>
+
+
+<br>
+<br>
+
+
+<!--Saludo-->
+<div  name="Saludo" id="Saludo">
+ <!-- Contenedor -->
+    <div class="container">
+      <!-- Cuadro de texto para ingresar texto -->
+      <div class="form-group">
+        <label for="texto">Ingrese su nombre:</label>
+        <input type="text" class="form-control" id="texto" />
+      </div>
+
+      <!-- Botón genera alerta -->
+      <button class="btn btn-primary" onclick="generarAlerta()">Saludo</button>
+    </div>
+</div>
+
+
+
+
+    <!-- Scripts de Bootstrap y de JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHJwusBd"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Función para generar la alerta
+      function generarAlerta() {
+        var texto = document.getElementById("texto").value;
+        alert('Bienvenido ' + texto);
+      }
+    </script>
+
+
+  </body>
+</html>
